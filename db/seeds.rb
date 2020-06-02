@@ -4,4 +4,12 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   Character.create(name: 'Luke', movie: movies.first
+Task.destroy_all
+
+10.times do 
+  Task.create(
+    title: Faker::Coffee.varietype,
+    details: Faker::ChuckNorris.fact,
+  )
+end
